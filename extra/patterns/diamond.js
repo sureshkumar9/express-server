@@ -11,7 +11,7 @@ function diamond(x) {
    }
    for (let i = 0; i < x; i++) {
       a = "";
-      for (let j = i; j > 0; j--)
+      for (let j= i; j > 0; j--)
          a += " ";
       for (let z = i; z < x; z++)
          a += "* ";
