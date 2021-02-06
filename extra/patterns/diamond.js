@@ -1,4 +1,4 @@
-function diamond(x) {
+export default function diamond(x) {
    let a = " "
    console.log("print a diamond with rows " + x);
    for (let i = 0; i < x; i++) {
@@ -11,11 +11,11 @@ function diamond(x) {
    }
    for (let i = 0; i < x; i++) {
       a = "";
-      for (let j= i; j > 0; j--)
+      for (let j = i; j > 0; j--)
          a += " ";
       for (let z = i; z < x; z++)
          a += "* ";
       console.log(a);
    }
 }
-diamond(5);
+// diamond(5);
