@@ -20,4 +20,3 @@ function hasPermission(moduleName, role, permissionType) {
 let x = hasPermission(permissions.getUsers, 'head-trainer', 'delete');
 console.log(x)
 console.log(permissions)
-
