@@ -18,4 +18,4 @@ export default function diamond(x) {
       console.log(a);
    }
 }
-// diamond(5);
+diamond(5);

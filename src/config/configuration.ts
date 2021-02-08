@@ -1,3 +1,4 @@
+import { IConfig } from './IConfig';
 
 const enVars = require('dotenv').config();
 
