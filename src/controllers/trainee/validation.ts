@@ -52,7 +52,7 @@ const config = {
             in: ['body'],
             required: true,
             isObject: true,
-            custom: function (dataToUpdate) { },
+            custom: function () { },
         }
     }
 }
