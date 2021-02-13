@@ -1,4 +1,6 @@
 import * as mongoose from 'mongoose';
+import Seeds from './seedData';
+
 class Database {
     static open (MONGO_URL) {
         return new Promise((resolve, reject) => {
@@ -9,12 +11,14 @@ class Database {
                 reject(err);
                 return;
             }
-            resolve(undefined);
+            Seeds();
+            resolve(null);
         });
     });
 }
     static disconnect() {
         console.log('Inside disconnect');
+        mongoose.disconnect();
     }
 }
 export default Database;
